@@ -102,11 +102,13 @@ if __name__ == '__main__':
         classes = ['black','blue','green','red','white']
     elif args.classes == 'refined':
         classes = ['humans','firststrike']
-        
+    
+    # SAVING CURRENTLY DISABLED TO AVOID OVERWRITING WORKING FILES
+    '''
     for cl in range(len(classes)):
         torch.save(cl_means_t[cl], 'means/mean_t_'+classes[cl]+'.pt')
         torch.save(cl_means_b[cl], 'means/mean_b_'+classes[cl]+'.pt')
-
+    '''
 
 
 
