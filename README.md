@@ -36,6 +36,11 @@ get_means.py --classes --checkpoint --batch_size
 EXAMPLE CALL: python get_means.py --classes=refined --checkpoint=vqvae_200.pt --batch_size=16
 
 
+
+
+
+
+
 The script 'gen_images.py' is used to generate trasformed images given an input images, and the class of image it should be transformed into.
 
 The script is run with the following parameters:
@@ -72,6 +77,7 @@ gen_images.py --checkpoint --input_img --transform_class --mode --minmax --scale
   
 --scale:
 
-  The amount the latent variables should be changed. Changes start to become apparent with a scale value of around 5, and output starts to become extremely nisy with a scale above 15
+  The amount the latent variables should be changed. Changes start to become apparent with a scale value of around 5, and output starts to become extremely noisy with a scale above 15
   
+EXAMPLE CALL: python gen_images.py --checkpoint=vqvae_200.pt --transform_class=red --mode=minmax --scale=7.5 --minmax=1500
   
