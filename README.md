@@ -16,16 +16,21 @@ The code is run with the following parameters:
 python get_means.py --classes --checkpoint --batch_size
 
 --classes:
+
   'colors' (default):
+  
     Gets the mean latent variables for each color category of cards in the dataset (black, blue, green, red, white)
     
   'refined':
+  
     Gets the mean latent variables for the refined subsets in the 'cards_refined/' folder (humans, firststrike)
     
 --checkpoint:
+
   Which checkpoint of the model to use. Several are included in the repo, of the form 'vqvae_x.pt' where the x is the number of epochs run during training
   
 --batch_size:
+
   The batch size to use when encoding the images
   
 EXAMPLE CALL: python get_means.py --classes=refined --checkpoint=vqvae_200.pt --batch_size=16
